@@ -40,6 +40,10 @@ var removing = browser.browsingData.removeFormData(
 
 A [`Promise`](/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise) that will be fulfilled with no arguments when the removal has finished. If any error occurs, the promise will be rejected with an error message.
 
+## Browser compatibility
+
+{{Compat}}
+
 ## Examples
 
 Remove form data saved in the last week:
@@ -78,10 +82,6 @@ function onError(error) {
 browser.browsingData.removeFormData({}).
 then(onRemoved, onError);
 ```
-
-## Browser compatibility
-
-{{Compat}}
 
 {{WebExtExamples}}
 
